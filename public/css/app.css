@@ -5730,10 +5730,4 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.hall path {
-  fill: #a2cbc7; }
-
-.hall path:hover {
-  fill: #aabb00; }
-
 /*# sourceMappingURL=app.css.map */

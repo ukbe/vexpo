@@ -1,17 +1,25 @@
-var PageHeader = React.createClass({
+import React from 'react';
+import PageHeader from './PageHeader';
+import PageContent from './PageContent';
+import PageFooter from './PageFooter';
+
+var App = React.createClass({
 
     render: function() {
 
-        <div className="app-container">
-            <header>
-                <nav>
-                    <a href="#">Home</a>
-                </nav>
-            </header>
+        return (
+            <div className="app-container">
 
-        </div>
+                <PageHeader/>
+
+                <PageContent children={this.props.children }/>
+
+                <PageFooter/>
+
+            </div>
+        )
     }
 
 });
 
-module.exports = PageHeader;
+module.exports = App;

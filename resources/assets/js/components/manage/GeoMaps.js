@@ -1,9 +1,17 @@
-var PageHeader = React.createClass({
+import React from 'react';
+
+var GeoMaps = React.createClass({
 
     render: function() {
+
+        return (
+
+            <div></div>
+
+        )
 
     }
 
 });
 
-module.exports = PageHeader;
+module.exports = GeoMaps;

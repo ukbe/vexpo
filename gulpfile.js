@@ -20,7 +20,9 @@ elixir.config.js.browserify.watchify = {
 
 elixir(function(mix) {
     mix.sass('app.scss');
+    mix.version(['css/app.css']);
 
-    mix.browserify('app.js');
-
+    mix.browserify('app-root.js');
 });
+
+//elixir.Task.find('sass').watch('resources/assets/sass',['sass']);

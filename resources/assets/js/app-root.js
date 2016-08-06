@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Router, Route, useRouterHistory, IndexRoute } from 'react-router'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route, useRouterHistory, IndexRoute } from 'react-router';
 import { createHashHistory } from 'history';
 
 import App from './components/App';
@@ -16,7 +16,6 @@ import Halls from './components/manage/Halls';
 import Stands from './components/manage/Stands';
 import Events from './components/manage/Events';
 import Reservations from './components/manage/Reservations';
-
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
 
