@@ -1,11 +1,12 @@
 import React from 'react';
 import GeoMap from './GeoMap';
+import EventSpot from './EventSpot';
 
 var Home = React.createClass({
 
     getInitialState: function(){
         return {
-            id: ''
+            id: 1
         }
     },
 
@@ -13,7 +14,13 @@ var Home = React.createClass({
 
         return (
 
-            <GeoMap id={this.state.id}/>
+            <div>
+
+                <GeoMap geomap_id={this.state.id}/>
+
+                <EventSpot/>
+
+            </div>
 
         )
 

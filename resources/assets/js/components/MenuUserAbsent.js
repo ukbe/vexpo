@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
+import { NavItem } from 'react-bootstrap';
 
 var MenuUserAbsent= React.createClass({
 
@@ -7,8 +8,7 @@ var MenuUserAbsent= React.createClass({
 
         return (
 
-            <button type="button" className="btn btn-default navbar-btn">Sign in</button>
-
+            <NavItem eventKey={1} href="#">Sign in</NavItem>
         )
 
     }

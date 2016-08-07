@@ -8,7 +8,6 @@ var PageFooter = React.createClass({
             <div className="container">
                 <footer>
                     <nav>
-                        <a href="#">Home</a>
                     </nav>
                 </footer>
             </div>

@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import { Router, Route, useRouterHistory, IndexRoute } from 'react-router';
 import { createHashHistory } from 'history';
 
+import Reflux from "reflux";
+import RefluxPromise from "reflux-promise";
+Reflux.use(RefluxPromise(window.Promise));
+
 import App from './components/App';
 import Home from './components/Home';
 import SignUp from './components/SignUp';
@@ -38,3 +42,5 @@ ReactDOM.render((
         </Route>
     </Router>
 ), document.getElementById('app'));
+
+

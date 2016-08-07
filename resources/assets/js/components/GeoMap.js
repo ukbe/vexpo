@@ -165,12 +165,14 @@ var GeoMap = React.createClass({
 
         return (
 
-            <svg className="geomap" xmlns="http://www.w3.org/2000/svg" version="1.0" width={width} height={height} viewBox={viewbox} preserveAspectRatio="xMidYMid meet">
-                <g transform={transform}>
-                {this.jsx_paths}
-                </g>
-            </svg>
+            <div>
+                <svg className="geomap" xmlns="http://www.w3.org/2000/svg" version="1.0" width={width} height={height} viewBox={viewbox} preserveAspectRatio="xMidYMid meet">
+                    <g transform={transform}>
+                    {this.jsx_paths}
+                    </g>
+                </svg>
 
+            </div>
         )
 
     }

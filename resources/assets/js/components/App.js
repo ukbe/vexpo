@@ -1,5 +1,5 @@
 import React from 'react';
-import PageHeader from './PageHeader';
+import Navigation from './Navigation';
 import PageContent from './PageContent';
 import PageFooter from './PageFooter';
 
@@ -10,7 +10,7 @@ var App = React.createClass({
         return (
             <div className="app-container">
 
-                <PageHeader/>
+                <Navigation/>
 
                 <PageContent children={this.props.children }/>
 

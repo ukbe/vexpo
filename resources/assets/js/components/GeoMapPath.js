@@ -1,23 +1,27 @@
 import React from 'react';
 import $ from 'jquery';
+import EventSpotActions from '../actions/EventSpotActions';
 
 var GeoMapPath = React.createClass({
 
-    getDefaultProps: function(){
+    getInitialState: function(){
         return {
-            title: 'Chicago'
+            title: 'Argiculture Exposition',
+            body: 'Details about the event'
         }
     },
 
-    onClick: function() {
-        $('<div/>').class('eventBox').appendTo('body');
+    onClick: function(event) {
+
+        EventSpotActions.updateEvent(1);
+
     },
 
     render: function() {
 
         return (
 
-            <a href="#" onClick={this.onClick} title={this.props.title}><path d={this.props.data} title={this.props.title}></path></a>
+            <a href="#" onClick={this.onClick} title={this.props.title}><path d={this.props.data} title={this.state.title}></path></a>
 
         )
 
